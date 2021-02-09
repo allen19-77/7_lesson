@@ -2,18 +2,27 @@ let myInputOne = document.createElement('input')
 myInputOne.setAttribute('type', 'number')
 let myInputTwo = document.createElement('input')
 myInputTwo.setAttribute('type', 'number')
-let myButton = document.createElement('button')
-myButton.innerText = 'Показать'
+let myButtonOne = document.createElement('button')
+myButtonOne.innerText = 'Показать'
+let myButtonTwo = document.createElement('button')
+myButtonTwo.innerText = 'Очистить'
 let myParagraf = document.createElement('p')
 myParagraf.innerText = ''
 
 let body = document.querySelector('body')
 body.appendChild(myInputOne)
 body.appendChild(myInputTwo)
-body.appendChild(myButton)
+body.appendChild(myButtonOne)
+body.appendChild(myButtonTwo)
 body.appendChild(myParagraf)
 
-myButton.addEventListener('click', function () {
+myButtonTwo.addEventListener('click', function () {
+	myParagraf.innerText = ''
+	myInputOne.value = ''
+	myInputTwo.value = ''
+})
+
+myButtonOne.addEventListener('click', function () {
 
 	let price = 100
 	let age = myInputOne.value
