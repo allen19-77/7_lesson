@@ -1,7 +1,9 @@
 let myInputOne = document.createElement('input')
 myInputOne.setAttribute('type', 'number')
+myInputOne.setAttribute('placeholder', 'возраст')
 let myInputTwo = document.createElement('input')
 myInputTwo.setAttribute('type', 'number')
+myInputTwo.setAttribute('placeholder', 'количество')
 let myButtonOne = document.createElement('button')
 myButtonOne.innerText = 'Показать'
 let myButtonTwo = document.createElement('button')
